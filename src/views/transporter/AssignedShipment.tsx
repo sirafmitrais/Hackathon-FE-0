@@ -1,5 +1,7 @@
 // ticket 9
 
+import AssignTable from "../../components/Table/assignShipment";
+
 // add modal for allocate driver and truck
 // ticket 10
 
@@ -11,7 +13,7 @@
 function AssigneedShipmentPage() {
   return (
     <div>
-        this is Assigneed Shipment Page
+        <AssignTable/>
     </div>
     );
 }

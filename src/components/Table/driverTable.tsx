@@ -27,12 +27,13 @@ const DriverTable = (props: any) => {
           </tr>
         </thead>
         <tbody>
-          {Object.values(driverAll.data).map((driver: any) => {
+         
             
             <tr>
               <th scope="row">1</th>
-              <td>{driver.phone_number}</td>
-              <td>{driver.status}</td>
+              <th>Fauzi Faruq</th>
+              <td>081320462168</td>
+              <td>Active</td>
 
               <td>
                 <button type="button" className="btn btn-primary mr-2">
@@ -45,8 +46,27 @@ const DriverTable = (props: any) => {
                   <i className="far fa-trash-alt"></i>
                 </button>
               </td>
-            </tr>;
-          })}
+            </tr>
+
+            <tr>
+              <th scope="row">2</th>
+              <th>Faris</th>
+              <td>081320462168</td>
+              <td>Active</td>
+
+              <td>
+                <button type="button" className="btn btn-primary mr-2">
+                  <i className="far fa-eye"></i>
+                </button>
+                <button type="button" className="btn btn-success mr-2">
+                  <i className="fas fa-edit"></i>
+                </button>
+                <button type="button" className="btn btn-danger">
+                  <i className="far fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr>
+        
         </tbody>
       </Table>
     </div>
