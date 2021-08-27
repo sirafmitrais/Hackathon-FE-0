@@ -2,5 +2,13 @@
 
 // ticket 4 - 5
 
+function DriverPage(){
+    return (
+        <div>
+            this is driver page
+        </div>
+    )
+}
 
-export {}
+
+export default DriverPage

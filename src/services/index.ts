@@ -1,4 +1,4 @@
-import ExampleService from "./api/Example.service"
+import ExampleService from "./api/Main.service"
 
 export {
     ExampleService

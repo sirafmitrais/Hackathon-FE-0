@@ -1,5 +1,8 @@
 import { Link, Route, Switch } from 'react-router-dom';
 import './style.css'
+import Truck from './Truck';
+import Driver from './Drivers'
+import AssignedShipment from './AssignedShipment'
 
 const Header = () => {
   return (
@@ -10,12 +13,12 @@ const Header = () => {
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link to={"/tutorials"} className="nav-link">
+            <Link to={"/truck"} className="nav-link">
               Truck
             </Link>
           </li>
           <li className="nav-item">
-            <Link to={"/add"} className="nav-link">
+            <Link to={"/driver"} className="nav-link">
               Driver
             </Link>
           </li>
@@ -28,9 +31,16 @@ const Header = () => {
       </nav>
       <div className="container mt-3">
         <Switch>
-          <Route exact path={["/", "/tutorials"]}  />
-          <Route exact path="/add" />
-          <Route path="/tutorials/:id"  />
+         
+          <Route exact path="/driver">
+            <Driver/>
+          </Route>
+          <Route path="/shipment">
+            <AssignedShipment/>
+          </Route>
+          <Route path="/">
+            <Truck/>
+          </Route>
         </Switch>
       </div>
     </div>
