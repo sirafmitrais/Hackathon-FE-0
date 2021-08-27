@@ -3,7 +3,7 @@ import instances from "./AxiosInstance";
 // below is example
 const service = instances.instancePlaceHolder.apiInstance();
 
-const baseURL = 'driver'
+const baseURL = 'drivers'
 
 class DriverService {
   static getAllDriver() {
@@ -47,7 +47,7 @@ class DriverService {
   }
 
   static updateDriver(id: string, dataUpdate: string){
-      return service.patch(`${baseURL}/${id}`, dataUpdate)
+      return service.put(`${baseURL}/${id}`, dataUpdate)
         .then((response) => {
             return response;
         })

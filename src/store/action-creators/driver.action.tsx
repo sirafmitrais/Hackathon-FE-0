@@ -18,7 +18,7 @@ export const getDriverList = () => {
         .then((response) => {
             dispatch({
                 type: GET_LISTS_DRIVER,
-                payload: "response"
+                payload: response
             })
         })
   };

@@ -9,7 +9,7 @@ import {
 
 export interface GetAllAction {
     type: typeof GET_LISTS_DRIVER;
-    payload: string
+    payload: any
 }
 
 export interface GetDetailAction {
