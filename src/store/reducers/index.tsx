@@ -4,11 +4,13 @@ import { driverReducer } from "./driver.reducer";
 import {
     exampleReducer
 } from './example.reducer'
+import { TruckReducer } from "./truck.reducer";
 
 
 const reducers = combineReducers({
   example: exampleReducer,
-  driver: driverReducer
+  driver: driverReducer,
+  truck: TruckReducer
   
 });
 

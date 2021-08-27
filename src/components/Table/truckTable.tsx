@@ -1,8 +1,31 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Table } from "reactstrap";
+import { RootState } from "../../store/reducers";
+
+import axios from "axios";
+import { getTruckList } from "../../store/action-creators/truck.action";
 
 const TruckTable = (props: any) => {
+  const dispatch = useDispatch()
+  const trucks = useSelector((state: RootState) =>  state.truck.listTruck)
+
+  console.log(trucks);
+  axios.defaults.baseURL = 'http://localhost:4000/api';
+  const [truck, setTruck] = useState(null)
+
+  // console.log('ini Truck', trucks);
+
+
+
+  console.log("test ini", trucks);
+  useEffect(() => {
+    dispatch(getTruckList());
+  }, [dispatch]);
+
   return (
     <div className="container mt-5">
+      
       <Table>
         <thead>
           <tr>
