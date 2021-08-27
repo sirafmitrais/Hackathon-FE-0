@@ -18,6 +18,8 @@ const reducer = (state = initialStateExample, action: ListsAction) => {
             return {
                 ...state
             }
+        default:
+            return state;
     }
 }
 
