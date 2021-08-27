@@ -8,5 +8,13 @@
 // ticket 11
 // add modal for change status
 
-export {}
+function AssigneedShipmentPage() {
+  return (
+    <div>
+        this is Assigneed Shipment Page
+    </div>
+    );
+}
+
+export default AssigneedShipmentPage;
 
